@@ -3,3 +3,13 @@ new file mode 100644
 index 0000000..e69de29
 diff --git a/_launch_control.rb b/_launch_control.rb
 new file mode 100644
++  end
++
++  def prepare_for_launch
++    return if engage_afterburner? && disengage_release_structure? && perform_cross_checks?
++
++    abort_launch
++  end
++
++  def random_seed(distance, current_speed)
++    total_iterations = (distance / current_speed).ceil

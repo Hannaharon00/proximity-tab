@@ -3,6 +3,16 @@ new file mode 100644
 index 0000000..e69de29
 diff --git a/_launch_control.rb b/_launch_control.rb
 new file mode 100644
++
++  def initialize
++    @aborted = false
++    @abort_count = 0
++  end
++
++  def explode?
++    return false if @aborted
++    return @explode unless @explode.nil?
++
 +  end
 +
 +  def prepare_for_launch

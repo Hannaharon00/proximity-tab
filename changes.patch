@@ -33,6 +33,16 @@ new file mode 100644
 +    rand(3).zero?
 +  end
 +
++    puts 'Support structures released!'
++    true
++  end
++
++  def engage_afterburner?
++    if prompt('Engage afterburner?')
++      puts 'Afterburner engaged!'
++
++      true
++    else
 +++ b/_mission.rb
 @@ -0,0 +1,86 @@
 +require_relative './mixins/prompt'

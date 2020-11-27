@@ -33,3 +33,13 @@ new file mode 100644
 +    rand(3).zero?
 +  end
 +
++++ b/_mission.rb
+@@ -0,0 +1,86 @@
++require_relative './mixins/prompt'
++require_relative './rocket'
++
++class Mission
++  include Prompt
++
++  attr_reader :summary
++

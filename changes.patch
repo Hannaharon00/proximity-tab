@@ -3,6 +3,16 @@ new file mode 100644
 index 0000000..e69de29
 diff --git a/_launch_control.rb b/_launch_control.rb
 new file mode 100644
+index 0000000..d48af9e
+--- /dev/null
++++ b/_launch_control.rb
+@@ -0,0 +1,82 @@
++require_relative './mixins/prompt'
++
++class LaunchControl
++  include Prompt
++
++  attr_reader :abort_count
 +
 +  def initialize
 +    @aborted = false

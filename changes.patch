@@ -23,6 +23,16 @@ index 0000000..d48af9e
 +    return false if @aborted
 +    return @explode unless @explode.nil?
 +
++    @explode = rand(2).zero?
++  end
++
++  def launch?
++    return if @aborted
++    return unless prompt('Launch?')
++    return false if abort_and_retry? && abort_launch
++
++    puts 'Launched!'
++    true
 +  end
 +
 +  def prepare_for_launch

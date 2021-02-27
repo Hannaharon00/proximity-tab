@@ -83,3 +83,13 @@ index 0000000..d48af9e
 +
 +  attr_reader :summary
 +
++    prompt('Would you like to proceed?')
++  end
++
++  def start
++    rocket = Rocket.configure(
++      distance: 160,
++      burn_rate: 168_240,
++      average_speed: 1500
++    )
++

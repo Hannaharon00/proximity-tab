@@ -73,6 +73,16 @@ index 0000000..d48af9e
 +
 +      true
 +    else
++      return false unless prompt('Retry?')
++
++      puts 'Safe Abort!'
++
++      @abort_count += 1
++      engage_afterburner?
++    end
++  end
++
++  def perform_cross_checks?
 +++ b/_mission.rb
 @@ -0,0 +1,86 @@
 +require_relative './mixins/prompt'

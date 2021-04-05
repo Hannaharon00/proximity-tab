@@ -103,3 +103,12 @@ index 0000000..d48af9e
 +      average_speed: 1500
 +    )
 +
+index 0000000..f863387
+--- /dev/null
++++ b/_mission_control.rb
+@@ -0,0 +1,74 @@
++require_relative './mission'
++require_relative './mixins/prompt'
++
++class MissionControl
++  include Prompt

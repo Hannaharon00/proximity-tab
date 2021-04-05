@@ -93,6 +93,16 @@ index 0000000..d48af9e
 +
 +  attr_reader :summary
 +
++    puts '  Payload capacity: 50,000 kg'
++    puts '  Fuel capacity: 1,514,100 liters'
++    puts '  Burn rate: 168,240 liters/min'
++    puts '  Average speed: 1,500 km/h'
++    puts "  Random seed: #{@random_seed}"
++    print 'What is the name of this mission? '
++    @mission_name = gets.chomp
++  end
++
++  def proceed?
 +    prompt('Would you like to proceed?')
 +  end
 +

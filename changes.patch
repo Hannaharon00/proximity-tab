@@ -122,3 +122,13 @@ index 0000000..f863387
 +
 +class MissionControl
 +  include Prompt
++
++  def format_time(time)
++    hours = time / 3600
++    minutes = (time % 3600) / 60
++    seconds = time % 60
++
++    format('%02d:%02d:%02d', hours, minutes, seconds)
++  end
++end
+diff --git a/_rocket.rb b/_rocket.rb

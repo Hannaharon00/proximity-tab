@@ -42,3 +42,11 @@ class LaunchControl
 
   attr_reader :abort_count
 
+    puts 'Launched!'
+    true
+  end
+
+  def explode?
+    return false if @aborted
+    return @explode unless @explode.nil?
+

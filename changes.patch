@@ -83,6 +83,16 @@ index 0000000..d48af9e
 +  end
 +
 +  def perform_cross_checks?
++    return unless prompt('Perform cross-checks?')
++
++    puts 'Cross-checks performed!'
++    true
++  end
++end
+diff --git a/_mission.rb b/_mission.rb
+new file mode 100644
+index 0000000..fcbd794
+--- /dev/null
 +++ b/_mission.rb
 @@ -0,0 +1,86 @@
 +require_relative './mixins/prompt'

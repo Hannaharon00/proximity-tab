@@ -103,6 +103,16 @@ index 0000000..fcbd794
 +
 +  attr_reader :summary
 +
++  def initialize
++    @summary = {
++      total_distance: 0.0,
++      no_abort_retries: 0,
++      no_explosions: 0,
++      total_fuel_burned: 0,
++      flight_time: 0.0
++    }
++
++    # @random_seed = random_seed
 +    puts '  Payload capacity: 50,000 kg'
 +    puts '  Fuel capacity: 1,514,100 liters'
 +    puts '  Burn rate: 168,240 liters/min'

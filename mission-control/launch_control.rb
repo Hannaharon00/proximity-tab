@@ -42,6 +42,14 @@ class LaunchControl
 
   attr_reader :abort_count
 
+    abort_launch
+  end
+
+  def launch?
+    return if @aborted
+    return unless prompt('Launch?')
+    return false if abort_and_retry? && abort_launch
+
     puts 'Launched!'
     true
   end

@@ -142,6 +142,16 @@ index 0000000..f863387
 +
 +class MissionControl
 +  include Prompt
++    puts "  Number of abort and retries: #{summary[:no_abort_retries]}"
++    puts "  Number of explosions: #{summary[:no_explosions]}"
++    puts "  Total fuel burned: #{summary[:total_fuel_burned]} liters"
++    puts "  Flight time: #{format_time(summary[:flight_time])}"
++  end
++
++  def display_summary
++    puts 'Final Summary:'
++    total_distance = @missions.sum { |mission| mission.summary[:total_distance] }
++    total_abort_retries = @missions.sum { |mission| mission.summary[:no_abort_retries] }
 +
 +  def format_time(time)
 +    hours = time / 3600

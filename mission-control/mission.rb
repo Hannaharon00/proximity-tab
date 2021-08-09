@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require_relative './rocket'
+require_relative './mixins/prompt'
+
 # Mission class represents a space mission with customizable parameters.
 # It allows you to plan and execute a mission with a rocket.
 #

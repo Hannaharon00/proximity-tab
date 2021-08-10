@@ -113,6 +113,16 @@ index 0000000..fcbd794
 +    }
 +
 +    # @random_seed = random_seed
++    # @plan = {
++
++    # }
++  end
++
++  # def print_plan
++  def plan
++    # TODO: Make it dynamic
++    puts 'Mission plan:'
++    puts '  Travel distance: 160.0 km'
 +    puts '  Payload capacity: 50,000 kg'
 +    puts '  Fuel capacity: 1,514,100 liters'
 +    puts '  Burn rate: 168,240 liters/min'

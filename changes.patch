@@ -143,6 +143,16 @@ index 0000000..fcbd794
 +      average_speed: 1500
 +    )
 +
++  def format_time(time)
++    hours = time / 3600
++    minutes = (time % 3600) / 60
++    seconds = time % 60
++
++    format('%02d:%02d:%02d', hours, minutes, seconds)
++  end
++
++  def update_summary(**kwargs)
++    @summary = kwargs.slice(
 index 0000000..f863387
 --- /dev/null
 +++ b/_mission_control.rb

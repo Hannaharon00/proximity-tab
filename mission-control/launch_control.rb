@@ -66,3 +66,9 @@ class LaunchControl
     return false if @aborted
     return @explode unless @explode.nil?
 
+    @explode = rand(2).zero?
+  end
+
+  def rand_launch_iteration(distance, current_speed)
+    total_iterations = (distance / current_speed).ceil
+

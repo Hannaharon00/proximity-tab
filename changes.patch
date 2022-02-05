@@ -162,6 +162,16 @@ index 0000000..f863387
 +
 +class MissionControl
 +  include Prompt
++
++    display_summary
++    puts 'Exiting Mission Control. Goodbye!'
++  end
++
++  def self.start
++    new.start
++  end
++
++  private
 +    puts "  Number of abort and retries: #{summary[:no_abort_retries]}"
 +    puts "  Number of explosions: #{summary[:no_explosions]}"
 +    puts "  Total fuel burned: #{summary[:total_fuel_burned]} liters"

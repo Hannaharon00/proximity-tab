@@ -153,6 +153,16 @@ index 0000000..fcbd794
 +
 +  def update_summary(**kwargs)
 +    @summary = kwargs.slice(
++      :total_distance,
++      :no_abort_retries,
++      :no_explosions,
++      :total_fuel_burned,
++      :flight_time
++    )
++  end
++end
+diff --git a/_mission_control.rb b/_mission_control.rb
+new file mode 100644
 index 0000000..f863387
 --- /dev/null
 +++ b/_mission_control.rb

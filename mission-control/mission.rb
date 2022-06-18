@@ -43,6 +43,24 @@ require_relative './mixins/prompt'
 class Mission
   include Prompt
 
+  attr_reader :summary
+
+  def initialize(
+    travel_distance: 160,
+    payload_capacity: 500_00,
+    fuel_capacity: 151_410_0,
+    burn_rate: 168_233,
+    average_speed: 1500
+  )
+    @travel_distance = travel_distance
+    @payload_capacity = payload_capacity
+    @fuel_capacity = fuel_capacity
+    @burn_rate = burn_rate
+    @average_speed = average_speed
+    @random_seed = 12
+    @summary = {}
+  end
+
   def print_plan
     puts 'Mission plan:'
     puts "  Travel distance: #{@travel_distance} km"

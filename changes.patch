@@ -143,6 +143,16 @@ index 0000000..fcbd794
 +      average_speed: 1500
 +    )
 +
++    if rocket.launch?
++      rocket.launch do |status|
++        display_mission_status(status)
++      end
++    end
++
++    update_summary(rocket.summary)
++  end
++
++  private
 +  def format_time(time)
 +    hours = time / 3600
 +    minutes = (time % 3600) / 60

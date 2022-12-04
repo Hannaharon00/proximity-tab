@@ -71,6 +71,11 @@ class Mission
     puts "  Random seed: #{@random_seed}"
   end
 
+  def fetch_mission_name
+    print 'What is the name of this mission? '
+    @mission_name = gets.chomp
+  end
+
   def proceed?
     prompt('Would you like to proceed?')
   end

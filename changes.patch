@@ -222,3 +222,13 @@ index 0000000..f863387
 +  end
 +end
 diff --git a/_rocket.rb b/_rocket.rb
++      # Increment the elapsed time and distance traveled
++      @elapsed_time += 1
++      @distance_traveled += calculate_distance_traveled
++
++      yield(status)
++      # Sleep for a second to simulate the passage of time
++      sleep 1
++    end
++  end
++

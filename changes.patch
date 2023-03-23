@@ -153,6 +153,16 @@ index 0000000..fcbd794
 +  end
 +
 +  private
++
++  def display_mission_status(**kwargs)
++    puts 'Mission status:'
++    puts "  Current fuel burn rate: #{kwargs[:current_fuel_burn_rate]} liters/min"
++    puts "  Current speed: #{kwargs[:current_speed]} km/h"
++    puts "  Current distance traveled: #{kwargs[:distance_traveled]} km"
++    puts "  Elapsed time: #{format_time(kwargs[:elapsed_time])}"
++    puts "  Time to destination: #{format_time(kwargs[:time_to_destination])}"
++  end
++
 +  def format_time(time)
 +    hours = time / 3600
 +    minutes = (time % 3600) / 60

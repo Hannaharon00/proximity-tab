@@ -202,6 +202,16 @@ index 0000000..f863387
 +  end
 +
 +  private
++
++  def run_mission
++    mission = Mission.new
++    mission.plan
++    # mission.print_plan
++    # mission.fetch_mission_name
++
++    if mission.proceed?
++      mission.start
++
 +      display_mission_summary(mission.summary)
 +    end
 +

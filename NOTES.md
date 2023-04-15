@@ -3,3 +3,12 @@
 - 2020-09-24 05:39:14 UTC: test: add unit tests
 - 2020-11-03 20:40:37 UTC: chore: update dependencies
 - 2020-12-08 14:38:11 UTC: docs: update README
+- 2023-09-19 22:08:43 UTC: fix: correct typo
+- 2023-09-25 16:39:49 UTC: chore: initial project setup
+- 2023-10-30 00:15:25 UTC: chore: update dependencies
+- 2023-11-22 04:49:02 UTC: fix: handle edge case
+- 2023-12-24 08:41:10 UTC: build: update build configuration
+- 2023-12-29 19:44:22 UTC: docs: update README
+- 2024-01-02 13:18:47 UTC: refactor: simplify logic
+- 2024-01-03 22:35:20 UTC: chore: update dependencies
+- 2024-01-19 18:33:27 UTC: docs: update README

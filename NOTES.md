@@ -1,0 +1,5 @@
+- 2020-07-30 03:32:23 UTC: perf: improve performance
+- 2020-09-02 03:06:31 UTC: feat: add new feature
+- 2020-09-24 05:39:14 UTC: test: add unit tests
+- 2020-11-03 20:40:37 UTC: chore: update dependencies
+- 2020-12-08 14:38:11 UTC: docs: update README

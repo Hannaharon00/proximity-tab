@@ -3,6 +3,16 @@
 - 2020-09-24 05:39:14 UTC: test: add unit tests
 - 2020-11-03 20:40:37 UTC: chore: update dependencies
 - 2020-12-08 14:38:11 UTC: docs: update README
+- 2021-01-16 07:48:22 UTC: build: update build configuration
+- 2021-02-16 00:34:37 UTC: refactor: clean up code structure
+- 2021-02-25 08:49:44 UTC: fix: patch minor issue
+- 2021-04-12 15:59:06 UTC: chore: initial project setup
+- 2021-04-16 18:10:22 UTC: build: update build configuration
+- 2021-05-16 22:59:17 UTC: feat: extend functionality
+- 2021-05-28 21:54:56 UTC: test: improve test coverage
+- 2021-08-04 11:34:30 UTC: docs: add usage instructions
+- 2021-08-16 15:16:38 UTC: refactor: clean up code structure
+- 2021-08-26 05:52:52 UTC: docs: add usage instructions
 - 2023-09-19 22:08:43 UTC: fix: correct typo
 - 2023-09-25 16:39:49 UTC: chore: initial project setup
 - 2023-10-30 00:15:25 UTC: chore: update dependencies

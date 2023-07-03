@@ -72,6 +72,14 @@ class LaunchControl
   def rand_launch_iteration(distance, current_speed)
     total_iterations = (distance / current_speed).ceil
 
+  def engage_afterburner?
+    if prompt('Engage afterburner?')
+      puts 'Afterburner engaged!'
+
+      true
+    else
+      return false unless prompt('Retry?')
+
       puts 'Safe Abort!'
 
       @abort_count += 1

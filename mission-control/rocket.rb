@@ -58,6 +58,11 @@ class Rocket
   def self.prepare_for_launch(distance:, burn_rate:, average_speed:)
     rocket = new(distance, burn_rate, average_speed)
 
+    rocket.prepare_for_launch
+
+    rocket
+  end
+
   def prepare_for_launch
     @launch_control.prepare_for_launch
   end

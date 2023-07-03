@@ -58,6 +58,10 @@ class Rocket
   def self.prepare_for_launch(distance:, burn_rate:, average_speed:)
     rocket = new(distance, burn_rate, average_speed)
 
+  def prepare_for_launch
+    @launch_control.prepare_for_launch
+  end
+
       yield(status)
       # Sleep for a second to simulate the passage of time
       sleep 1

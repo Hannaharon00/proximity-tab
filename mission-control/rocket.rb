@@ -67,6 +67,15 @@ class Rocket
     @launch_control.prepare_for_launch
   end
 
+  def launch?
+    @launch_control.launch?
+  end
+
+  def launch
+    @elapsed_time = 0
+    @distance_traveled = 0
+    @flight_time = Time.now
+
       yield(status)
       # Sleep for a second to simulate the passage of time
       sleep 1

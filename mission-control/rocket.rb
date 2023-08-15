@@ -92,3 +92,5 @@ class Rocket
     }
   end
 
+  private
+

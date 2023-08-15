@@ -96,3 +96,6 @@ class Mission
     puts "  Time to destination: #{format_time(status[:time_to_destination])}"
   end
 
+    format('%02d:%02d:%02d', hours, minutes, seconds)
+  end
+end

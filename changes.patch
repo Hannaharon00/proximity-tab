@@ -262,3 +262,13 @@ diff --git a/_rocket.rb b/_rocket.rb
 +    end
 +  end
 +
++  private
++
++  def flight_time
++    @flight_time ||= Time.now
++
++    Time.now - @flight_time
++  end
++
++  def explode_iteration
++    @explode_iteration || @launch_control.explode? && @launch_control.rand_explode_iteration(distance, current_speed)

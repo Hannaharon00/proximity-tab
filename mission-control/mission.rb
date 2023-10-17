@@ -85,6 +85,12 @@ class Mission
       distance: 160, burn_rate: 168_240, average_speed: 1500
     )
 
+    if rocket.launch?
+      rocket.launch do |status|
+        display_mission_status(status)
+      end
+    end
+
   private
 
   def display_mission_status(**status)

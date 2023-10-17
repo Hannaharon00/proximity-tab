@@ -91,6 +91,9 @@ class Mission
       end
     end
 
+    @summary = rocket.summary
+  end
+
   private
 
   def display_mission_status(**status)

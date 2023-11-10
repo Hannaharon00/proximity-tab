@@ -13,6 +13,16 @@
 - 2021-08-04 11:34:30 UTC: docs: add usage instructions
 - 2021-08-16 15:16:38 UTC: refactor: clean up code structure
 - 2021-08-26 05:52:52 UTC: docs: add usage instructions
+- 2021-10-13 21:53:39 UTC: feat: add core functionality
+- 2021-11-26 19:43:58 UTC: style: format code
+- 2021-12-26 21:28:44 UTC: chore: update dependencies
+- 2022-01-17 15:33:21 UTC: build: update build configuration
+- 2022-02-09 08:23:21 UTC: fix: handle edge case
+- 2022-02-13 00:23:00 UTC: fix: patch minor issue
+- 2022-03-07 11:42:20 UTC: build: update build configuration
+- 2022-03-08 04:57:13 UTC: feat: extend functionality
+- 2022-05-21 20:34:52 UTC: fix: handle edge case
+- 2022-05-29 21:54:09 UTC: feat: add new feature
 - 2023-09-19 22:08:43 UTC: fix: correct typo
 - 2023-09-25 16:39:49 UTC: chore: initial project setup
 - 2023-10-30 00:15:25 UTC: chore: update dependencies

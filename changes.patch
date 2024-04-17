@@ -252,6 +252,16 @@ diff --git a/_rocket.rb b/_rocket.rb
 +    @launch_control.launch?
 +  end
 +
++  def launch
++    @elapsed_time = 0
++    @distance_traveled = 0
++    @flight_time = Time.now
++
++    until reached_destination?
++      break puts 'Exploded!' if explode_iteration == elapsed_time
++
++      # Update rocket's position, fuel burn, speed, etc.
++      # You can implement the specific logic based on your requirements
 +      # Increment the elapsed time and distance traveled
 +      @elapsed_time += 1
 +      @distance_traveled += calculate_distance_traveled
@@ -272,3 +282,13 @@ diff --git a/_rocket.rb b/_rocket.rb
 +
 +  def explode_iteration
 +    @explode_iteration || @launch_control.explode? && @launch_control.rand_explode_iteration(distance, current_speed)
++  end
++
++  def reached_destination?
++    distance_traveled >= distance
++  end
++
++  def current_speed
++    average_speed / 60
++  end
++

@@ -101,3 +101,16 @@ class Rocket
   def flight_time
     @flight_time ||= Time.now
 
+    Time.now - @flight_time
+  end
+
+  def status
+    {
+      elapsed_time: elapsed_time,
+      distance_traveled: distance_traveled,
+      current_fuel_burn_rate: burn_rate / 60,
+      current_speed: average_speed,
+      time_to_destination: calculate_time_to_destination
+    }
+  end
+

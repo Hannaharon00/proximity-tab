@@ -76,6 +76,15 @@ class Rocket
     @distance_traveled = 0
     @flight_time = Time.now
 
+    until reached_destination?
+      break puts 'Exploded!' if explode_iteration == elapsed_time
+
+      # Update rocket's position, fuel burn, speed, etc.
+      # You can implement the specific logic based on your requirements
+      # Increment the elapsed time and distance traveled
+      @elapsed_time += 1
+      @distance_traveled += calculate_distance_traveled
+
       yield(status)
       # Sleep for a second to simulate the passage of time
       sleep 1

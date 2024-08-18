@@ -29,3 +29,10 @@ class MissionControl
     @missions = []
   end
 
+  def self.start
+    new.start
+  end
+
+  def start
+    puts 'Welcome to Mission Control!'
+

@@ -42,3 +42,13 @@
 - 2024-01-02 13:18:47 UTC: refactor: simplify logic
 - 2024-01-03 22:35:20 UTC: chore: update dependencies
 - 2024-01-19 18:33:27 UTC: docs: update README
+- 2024-02-27 23:34:52 UTC: fix: resolve minor bug
+- 2024-03-11 11:57:36 UTC: chore: tidy up project files
+- 2024-06-10 22:33:30 UTC: build: update build configuration
+- 2024-06-12 04:30:05 UTC: fix: correct typo
+- 2024-07-25 21:19:21 UTC: chore: tidy up project files
+- 2024-08-23 08:19:07 UTC: chore: bump version
+- 2024-09-17 12:03:48 UTC: fix: handle edge case
+- 2024-10-28 06:55:38 UTC: feat: add core functionality
+- 2024-11-29 21:11:47 UTC: chore: bump version
+- 2024-12-01 03:33:08 UTC: fix: resolve minor bug

@@ -252,6 +252,16 @@ index 0000000..fb67446
 +
 +class Rocket
 +  include Prompt
++    # in minutes
++    @elapsed_time = 0
++  end
++
++  def self.configure(*args)
++    rocket = new(*args)
++
++    rocket.prepare_for_launch
++
++    rocket
 +  end
 +
 +  def prepare_for_launch

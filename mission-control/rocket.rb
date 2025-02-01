@@ -123,3 +123,10 @@ class Rocket
     }
   end
 
+    remaining_time.ceil
+  end
+
+  def calculate_distance_traveled
+    (current_speed * elapsed_time)
+  end
+

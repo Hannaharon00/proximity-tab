@@ -193,6 +193,16 @@ index 0000000..f863387
 +class MissionControl
 +  include Prompt
 +
++  def initialize
++    @missions = []
++  end
++
++  def start
++    puts 'Welcome to Mission Control!'
++    loop do
++      break unless run_mission
++    end
++
 +    display_summary
 +    puts 'Exiting Mission Control. Goodbye!'
 +  end

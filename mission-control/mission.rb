@@ -105,6 +105,11 @@ class Mission
     puts "  Time to destination: #{format_time(status[:time_to_destination])}"
   end
 
+  def format_time(time)
+    hours = time / 3600
+    minutes = (time % 3600) / 60
+    seconds = time % 60
+
     format('%02d:%02d:%02d', hours, minutes, seconds)
   end
 end

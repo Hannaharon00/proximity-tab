@@ -44,3 +44,18 @@ class MissionControl
     puts 'Exiting Mission Control. Goodbye!'
   end
 
+  def display_summary
+    puts 'Final Summary:'
+    total_distance = @missions.sum { |mission| mission.summary[:total_distance] }
+    total_abort_retries = @missions.sum { |mission| mission.summary[:no_abort_retries] }
+    total_explosions = @missions.sum { |mission| mission.summary[:no_explosions] }
+    total_fuel_burned = @missions.sum { |mission| mission.summary[:total_fuel_burned] }
+    total_flight_time = @missions.sum { |mission| mission.summary[:flight_time] }
+
+    puts "  Total distance traveled (for all missions combined): #{total_distance.round(2)} km"
+    puts "  Number of abort and retries (for all missions combined): #{total_abort_retries}"
+    puts "  Number of explosions (for all missions combined): #{total_explosions}"
+    puts "  Total fuel burned (for all missions combined): #{total_fuel_burned} liters"
+    puts "  Total flight time (for all missions combined): #{format_time(total_flight_time)}"
+  end
+

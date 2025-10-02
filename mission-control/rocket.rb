@@ -123,6 +123,10 @@ class Rocket
     }
   end
 
+  def reached_destination?
+    distance_traveled >= distance
+  end
+
     remaining_time.ceil
   end
 

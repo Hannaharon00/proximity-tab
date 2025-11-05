@@ -44,6 +44,14 @@ class MissionControl
     puts 'Exiting Mission Control. Goodbye!'
   end
 
+  private
+
+  def run_mission
+    mission = Mission.new
+
+    mission.print_plan
+    mission.fetch_mission_name
+
   def display_summary
     puts 'Final Summary:'
     total_distance = @missions.sum { |mission| mission.summary[:total_distance] }

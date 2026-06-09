@@ -67,3 +67,11 @@ class MissionControl
     puts "  Total flight time (for all missions combined): #{format_time(total_flight_time)}"
   end
 
+  def format_time(time)
+    hours = time / 3600
+    minutes = (time % 3600) / 60
+    seconds = time % 60
+
+    format('%02d:%02d:%02d', hours, minutes, seconds)
+  end
+end

@@ -88,6 +88,13 @@ class LaunchControl
     @abort_count += 1
   end
 
+  def disengage_release_structure?
+    return unless prompt('Release support structures?')
+
+    puts 'Support structures released!'
+    true
+  end
+
   def engage_afterburner?
     if prompt('Engage afterburner?')
       puts 'Afterburner engaged!'

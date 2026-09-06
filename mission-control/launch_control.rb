@@ -110,3 +110,10 @@ class LaunchControl
     end
   end
 
+  def perform_cross_checks?
+    return unless prompt('Perform cross-checks?')
+
+    puts 'Cross-checks performed!'
+    true
+  end
+end

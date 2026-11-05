@@ -52,6 +52,12 @@ class MissionControl
     mission.print_plan
     mission.fetch_mission_name
 
+    if mission.proceed?
+      mission.start
+
+      display_mission_summary(mission.summary)
+    end
+
     @missions << mission
     prompt('Would you like to run another mission?')
   end
